@@ -16,6 +16,9 @@ use App\Http\Controllers\UserController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/', function () {
+    return redirect('/list');
+});
 
 Route::get("/list", [UserController::class, "list"])->name("list");
 Route::get("/export",[UserController::class, "export"])->name("export");

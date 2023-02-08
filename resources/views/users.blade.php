@@ -7,12 +7,12 @@
   @vite('resources/css/app.css')
   <title>Document</title>
 </head>
-<body>
-  <div class="bg-light-black p-[50px]">
-    <form action="">
+<body class="bg-light-black">
+  <div class="md:py-[50px] md:px-[150px] p-5">
+    <form class="mb-5">
       <a href="{{ route("export") }}" class="px-5 py-3 bg-black text-green rounded-md">Export</a>
     </form>
-    <div class="rounded-lg p-[50px]">
+    <div class="rounded-lg">
       <table class="w-full text-sm text-left text-gray dark:text-gray-400">
         <thead class="bg-black border-b">
           <tr>
@@ -30,13 +30,13 @@
         <tbody>
           @foreach ($users as $user)
               <tr class="bg-black border-b dark:bg-gray dark:border-gray">
-                <td class="py-4 px-6">
+                <td class="py-4 px-6 hover:text-green">
                   {{ $user->id }}
                 </td>
-                <td class="py-4 px-6">
+                <td class="py-4 px-6 hover:text-green">
                   {{ $user->name }}
                 </td>
-                <td class="py-4 px-6">
+                <td class="py-4 px-6 hover:text-green">
                   {{ $user->email }}
                 </td>
               </tr>
@@ -45,8 +45,6 @@
       </table>
     </div>
   </div>
-  
-  
 </body>
 </html>
 
