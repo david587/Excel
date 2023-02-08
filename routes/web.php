@@ -18,3 +18,4 @@ use App\Http\Controllers\UserController;
 // });
 
 Route::get("/list", [UserController::class, "list"])->name("list");
+Route::get("/export",[UserController::class, "export"])->name("export");

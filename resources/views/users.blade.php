@@ -8,8 +8,11 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="bg-light-black">
-    <div class="overflow-x-auto relative shadow-md sm:rounded-lg m-[50px]">
+  <div class="bg-light-black p-[50px]">
+    <form action="">
+      <a href="{{ route("export") }}" class="px-5 py-3 bg-black text-green rounded-md">Export</a>
+    </form>
+    <div class="rounded-lg p-[50px]">
       <table class="w-full text-sm text-left text-gray dark:text-gray-400">
         <thead class="bg-black border-b">
           <tr>
